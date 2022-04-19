@@ -1,0 +1,121 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.largeStar {
+  margin-right: 5px;
+  color: black;
+}
+.star {
+  margin-right: 5px;
+  font-size: 14px;
+  color: black;
+}
+
+.smallStar {
+  margin-right: 5px;
+  font-size: 10px;
+  color: black;
+}
+
+.leftContent {
+  flex-shrink: 0;
+  width: 400px;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #f2f5fa;
+  box-sizing: border-box;
+  transition: left 0.3s;
+
+  .subTitleBox {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .scoreBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    margin-top: 8px;
+    font-size: 28px;
+    background-color: #bfe0ff;
+  }
+
+  .otherScoreBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    border-bottom: 1px solid #e7e7e7;
+
+    .otherScoreItem {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.rightContent {
+  flex: 1;
+  padding: 24px;
+
+  .reviewBox {
+    margin-bottom: 40px;
+  }
+
+  .filterBox {
+    text-align: right;
+  }
+
+  .moreBox {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #888;
+  }
+
+  .reportedBox {
+    color: #888;
+  }
+}
+
+.marginRight {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.helpfulBox {
+  margin-right: 5px;
+  font-size: 12;
+}
+
+.filterTag {
+  height: 40px;
+  padding: 0 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  line-height: 38px;
+  font-size: 14px;
+}
+
+.feedbackContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 976px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .leftContent {
+    width: 100%;
+  }
+}
